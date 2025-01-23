@@ -10,24 +10,24 @@ export default function Dashboard() {
                     <img src="/images/reactjs.jpg" alt="react" width={200} />
                     <div>
                         <Link className="dashboard-course-link" to="/Kambaz/Courses/1234/Home"> CS1234 React JS</Link>
-                        <p className="wdashboard-course-title">Full Stack Software Developer</p>
-                        <Link to="/Kambaz/Courses/1234/Home">Go</Link>
+                        <Link to="/Kambaz/Courses/1234/Home"><p className="dashboard-course-title">Full Stack Software Developer</p></Link>
+                        <Link to="/Kambaz/Courses/1234/Home"><button>Go</button></Link>
                     </div>
                 </div>
                 <div id="dashboard-course">
                     <img src="/images/reactjs.jpg" alt="react" width={200} />
                     <div>
                         <Link className="dashboard-course-link" to="/Kambaz/Courses/1234/Home"> CS1234 React JS</Link>
-                        <p className="dashboard-course-title">Full Stack Software Developer</p>
-                        <Link to="/Kambaz/Courses/1234/Home"> Go </Link>
+                        <Link to="/Kambaz/Courses/1234/Home"><p className="dashboard-course-title">Full Stack Software Developer</p></Link>
+                        <Link to="/Kambaz/Courses/1234/Home"><button>Go</button></Link>
                     </div>
                 </div>
                 <div id="dashboard-course">
                     <img src="/images/reactjs.jpg" alt="react" width={200} />
                     <div>
                         <Link className="dashboard-course-link" to="/Kambaz/Courses/1234/Home"> CS1234 React JS</Link>
-                        <p className="dashboard-course-title">Full Stack Software Developer</p>
-                        <Link to="/Kambaz/Courses/1234/Home">Go</Link>
+                        <Link to="/Kambaz/Courses/1234/Home"><p className="dashboard-course-title">Full Stack Software Developer</p></Link>
+                        <Link to="/Kambaz/Courses/1234/Home"><button>Go</button></Link>
                     </div>
                 </div>
             </div>

@@ -9,10 +9,16 @@ import Padding from "./Padding";
 import Positions from "./Positions";
 import Zindex from "./Zindex";
 import Flex from "./Flex";
+import BootstrapGrids from "./BootstrapGrids";
+import BootstrapLists from "./BootstrapLists";
+import BootstrapNavigation from "./BootstrapNavigation";
+import BootstrapTables from "./BootstrapTables";
+import ScreenSizeLabel from "./ScreenSizeLabel";
+import BootstrapForms from "./BootstrapForms";
 
 export default function Lab2() {
     return (
-        <div id="wd-lab2">
+        <div className="container" id="wd-lab2">
             <h2>Lab 2 - Cascading Style Sheets</h2>
             <h3>Styling with the STYLE attribute</h3>
             <p>
@@ -47,6 +53,24 @@ export default function Lab2() {
             </div>
             <div>
                 <Flex />
+            </div>
+            <div>
+                <BootstrapGrids />
+            </div>
+            <div>
+                <BootstrapLists />
+            </div>
+            <div>
+                <BootstrapNavigation />
+            </div>
+            <div>
+                <BootstrapTables />
+            </div>
+            <div>
+                <ScreenSizeLabel />
+            </div>
+            <div>
+                <BootstrapForms />
             </div>
         </div>
     );

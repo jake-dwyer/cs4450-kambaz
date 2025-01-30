@@ -1,14 +1,28 @@
+import Nav from "react-bootstrap/Nav";
+
 export default function TOC() {
     return (
         <div id="wd-toc">
-            <h2>Table of Contents</h2>
-            <ul>
-                <li><a id="wd-a" href="#/Labs">Labs</a></li>
-                <li><a id="wd-a1" href="#/Labs/Lab1">Labs 1</a></li>
-                <li><a id="wd-a2" href="#/Labs/Lab2">Labs 2</a></li>
-                <li><a id="wd-a3" href="#/Labs/Lab3">Labs 3</a></li>
-                <li><a id="wd-k" href="#/Kambaz">Kambaz</a></li>
-            </ul>
+            <Nav variant="pills">
+                <Nav.Item>
+                    <Nav.Link href="#/Labs">Lab 1</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="#/Labs/Lab1">Lab 1</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="#/Labs/Lab2">Lab 2</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="#/Labs/Lab2">Lab 3</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="#/Kambaz">Kambaz</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link href="https://github.com/jannunzi">My GitHub</Nav.Link>
+                </Nav.Item>
+            </Nav>
         </div>
     );
 }

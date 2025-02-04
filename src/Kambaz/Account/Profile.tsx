@@ -1,22 +1,31 @@
 import { Link } from 'react-router-dom';
+import { Form } from 'react-bootstrap';
 
 export default function Profile() {
     return (
         <div id="profile-screen">
             <h3>Profile</h3>
-            <input id="username" value="alice" placeholder="username" /> <br />
-            <input id="password" value="123" placeholder="password" type="password"/> <br />
-            <input id="first-name" value="Alice" placeholder="First Name" /> <br />
-            <input id="last-name" value="Wonderland" placeholder="Last Name" /> <br />
-            <input id="dob" value="2000-01-01" type="date" /> <br />
-            <input id="email" value="alice@wonderland" type="email" /> <br />
-            <select id="role">
+            <Form.Control id="wd-username" value="alice" placeholder="Username"
+                className="mb-2" />
+            <Form.Control id="wd-password" value="123" placeholder="Enter Password"
+                className="mb-2" />
+            <Form.Control id="wd-first-name" value="Alice" placeholder="First Name"
+                className="mb-2" />
+            <Form.Control id="wd-last-name" value="Wonderland" placeholder="Last Name"
+                className="mb-2" />
+            <Form.Control id="wd-dob" placeholder="mm/dd/yyyy" type="date"
+                className="mb-2" />
+            <Form.Control id="wd-email" value="alice@wonderland.com" placeholder="Email" type="email"
+                className="mb-2" />
+            <select id="role" className="form-select mb-2">
                 <option value="USER">User</option>
                 <option value="ADMIN">Admin</option>
                 <option value="FACULTY">Faculty</option>
                 <option value="STUDENT">Student</option>
-            </select> <br />
-            <Link to="/Kambaz/Account/Signin">Sign out</Link>
+            </select>
+            <Link id="wd-signout-btn" to="/Kambaz/Account/Signin"
+                className="btn btn-danger w-100 mb-2">
+                Sign out </Link>
         </div>
     );
 }

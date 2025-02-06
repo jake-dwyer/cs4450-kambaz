@@ -1,0 +1,16 @@
+#wd-assignments-options {
+    width: 100%;
+}
+
+.search-container {
+    position: relative;
+    width: 300px;
+}
+
+#wd-buttons {
+    flex-shrink: 0;
+}
+
+.wd-assignment {
+    border-left: 3px solid green !important;
+}

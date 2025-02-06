@@ -1,110 +1,128 @@
+import { Button } from "react-bootstrap";
+
 export default function Editor() {
     return (
-        <div id="assignments-editor">
-            <label htmlFor="name"><h3>Assignment Name</h3></label>
-            <input id="name" value="A1 - ENV + HTML" type="text" /><br /><br />
-            <textarea id="description">The assignment is available online Submit a link to the landing page of your Web application running on Netflify. The landing page should include the following: Your full name and section links to each of the lab assignments Link to the Kanbas application links to all relevant source code repositories The Kanbas application should include a link to navigate back to the landing page.
-            </textarea> <br />
-            <table>
-                <tr>
-                    <td align="right" valign="top">
-                        <label htmlFor="points">Points</label>
-                    </td>
-                    <td>
-                        <input id="points" value={100} />
-                    </td>
-                </tr> <br />
-                <tr>
-                    <td align="right" valign="top">
-                        <label htmlFor="group">Assignment Group</label>
-                    </td>
-                    <td>
-                        <select id="select-group">
+        <div className="container mt-4">
+            <div className="mb-4">
+                <div className="row align-items-center">
+                    <div className="col-md-3">
+                        <label htmlFor="name" className="form-label"><h4>Assignment Name</h4></label>
+                    </div>
+                    <div className="col-md-9">
+                        <input id="name" value="A1 - ENV + HTML" type="text" className="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="mb-4">
+                <div className="row align-items-start">
+                    <div className="col-md-3">
+                        <label htmlFor="description" className="form-label">Description</label>
+                    </div>
+                    <div className="col-md-9">
+                        <textarea id="description" className="form-control" rows={6}>
+                            The assignment is available online. Submit a link to the landing page of your Web application running on Netlify. The landing page should include the following:
+                            Your full name and section, links to each of the lab assignments, link to the Kanbas application, links to all relevant source code repositories.
+                            The Kanbas application should include a link to navigate back to the landing page.
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mb-4">
+                <div className="row align-items-center mb-3">
+                    <div className="col-md-3">
+                        <label htmlFor="points" className="form-label">Points</label>
+                    </div>
+                    <div className="col-md-9">
+                        <input id="points" value={100} type="number" className="form-control" />
+                    </div>
+                </div>
+                <div className="row align-items-center mb-3">
+                    <div className="col-md-3">
+                        <label htmlFor="group" className="form-label">Assignment Group</label>
+                    </div>
+                    <div className="col-md-9">
+                        <select id="group" className="form-select">
                             <option value="NONE">None</option>
-                            <option selected value="ASSIGNMENTS">ASSIGNMENTS</option>
+                            <option selected value="ASSIGNMENTS">Assignments</option>
                         </select>
-                    </td>
-                </tr> <br />
-                <tr>
-                    <td align="right" valign="top">
-                        <label htmlFor="display-grade">Display Grade as</label>
-                    </td>
-                    <td>
-                        <select id="select-group">
-                            <option value="FRACTION">FRACTION</option>
-                            <option selected value="PERCENTAGE">PERCENTAGE</option>
+                    </div>
+                </div>
+                <div className="row align-items-center">
+                    <div className="col-md-3">
+                        <label htmlFor="display-grade" className="form-label">Display Grade as</label>
+                    </div>
+                    <div className="col-md-9">
+                        <select id="display-grade" className="form-select">
+                            <option value="FRACTION">Fraction</option>
+                            <option selected value="PERCENTAGE">Percentage</option>
                         </select>
-                    </td>
-                </tr> <br />
-                <tr>
-                    <td align="right" valign="top">
-                        <label htmlFor="submission-type">Submission Type</label>
-                    </td>
-                    <td>
-                        <select id="submission-type">
-                            <option value="PAPER">PAPER</option>
-                            <option selected value="ONLINE">ONLINE</option>
-                        </select>
-                    </td>
-                </tr> <br />
-                <tr>
-                    <td></td>
-                    <td align="left" valign="top">
-                        <label>
-                            Online Entry Options:
-                        </label> <br />
-                        <input type="checkbox" name="check-text-entry" id="wd-checkbox-text-entry" />
-                        <label htmlFor="wd-checkbox-text-entry">Text Entry</label> <br />
+                    </div>
+                </div>
+            </div>
 
-                        <input type="checkbox" name="check-website-url" id="wd-checkbox-website-url" />
-                        <label htmlFor="wd-checkbox-website-url">Website URL</label> <br />
+            <label htmlFor="submission-type" className="form-label mb-1">Submission Type</label>
+            <div className="mb-4 p-4 rounded border border-secondary">
+                <div>
+                    <select id="submission-type" className="form-select w-50 mb-4">
+                        <option value="PAPER">Paper</option>
+                        <option selected value="ONLINE">Online</option>
+                    </select>
+                    <div className="mt-2">
+                        <h6><b>Online Entry Options:</b></h6>
+                        <div className="form-check mb-4 mt-4">
+                            <input type="checkbox" className="form-check-input" id="text-entry" />
+                            <label className="form-check-label" htmlFor="text-entry">Text Entry</label>
+                        </div>
+                        <div className="form-check mb-4">
+                            <input type="checkbox" className="form-check-input" id="website-url" defaultChecked />
+                            <label className="form-check-label" htmlFor="website-url">Website URL</label>
+                        </div>
+                        <div className="form-check mb-4">
+                            <input type="checkbox" className="form-check-input" id="media-recordings" />
+                            <label className="form-check-label" htmlFor="media-recordings">Media Recordings</label>
+                        </div>
+                        <div className="form-check mb-4">
+                            <input type="checkbox" className="form-check-input" id="student-annotation" />
+                            <label className="form-check-label" htmlFor="student-annotation">Student Annotation</label>
+                        </div>
+                        <div className="form-check">
+                            <input type="checkbox" className="form-check-input" id="file-uploads" />
+                            <label className="form-check-label" htmlFor="file-uploads">File Uploads</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                        <input type="checkbox" name="check-media-recordings" id="wd-checkbox-media-recordings" />
-                        <label htmlFor="wd-checkbox-media-recordings">Media Recordings</label> <br />
+            <label htmlFor="submission-type" className="form-label mb-1"></label>
+            <div className="mb-4 p-4 rounded border border-secondary">
+                <div className="row g-3 mb-4">
+                    <div className="col-md-6">
+                        <label htmlFor="assign-to" className="form-label">Assign to</label>
+                        <input id="assign-to" value="Everyone" type="text" className="form-control" />
+                    </div>
+                    <div className="col-md-6">
+                        <label htmlFor="due-date" className="form-label">Due</label>
+                        <input id="due-date" value="2024-05-13" type="date" className="form-control" />
+                    </div>
+                    <div className="col-md-6">
+                        <label htmlFor="available-from" className="form-label">Available from</label>
+                        <input id="available-from" value="2024-05-06" type="date" className="form-control" />
+                    </div>
+                    <div className="col-md-6">
+                        <label htmlFor="available-until" className="form-label">Until</label>
+                        <input id="available-until" value="2024-05-20" type="date" className="form-control" />
+                    </div>
+                </div>
+            </div>
 
-                        <input type="checkbox" name="check-student-annotation" id="wd-checkbox-student-annotation" />
-                        <label htmlFor="wd-checkbox-student-annotation">Student Annotation</label> <br />
-
-                        <input type="checkbox" name="check-file-uploads" id="wd-checkbox-file-uploads" />
-                        <label htmlFor="wd-checkbox-file-uploads">File Uploads</label> <br />
-                    </td>
-                </tr> <br />
-                <tr>
-                    <td></td>
-                    <td>
-                        <label htmlFor="wd-assign-to">Assign Assign to</label><br />
-                        <input id="wd-assign-to" value="Everyone" />
-                    </td>
-                </tr> <br />
-                <tr>
-                    <td></td>
-                    <td>
-                        <label htmlFor="wd-due">Due</label><br />
-                        <input id="wd-due" value="2024-05-13" type="date" />
-                    </td>
-                </tr> <br />
-                <tr>
-                    <td></td>
-                    <td>
-                        <label htmlFor="wd-available-from">Available from</label><br />
-                        <input id="wd-available-from" value="2024-05-06" type="date" />
-                    </td>
-                    <td>
-                        <label htmlFor="wd-available-until">Until</label><br />
-                        <input id="wd-available-until" value="2024-05-20" type="date" />
-                    </td>
-                </tr> <br />
-            </table>
             <hr />
-            <table style={{ width: "100%" }}>
-                <tr>
-                    <td></td>
-                    <td align="right">
-                        <button id="wd-cancel">Cancel</button>
-                        <button id="wd-save">Save</button>
-                    </td>
-                </tr>
-            </table>
+            
+            <div className="d-flex justify-content-end mt-4">
+                <Button id="cancel" variant="secondary" className="me-2">Cancel</Button>
+                <Button id="save" variant="danger">Save</Button>
+            </div>
         </div>
     );
 }

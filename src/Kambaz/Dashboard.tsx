@@ -11,7 +11,7 @@ export default function Dashboard() {
                     <Row xs={1} md={5} className="g-4">
                         <Col className="wd-dashboard-course" style={{ width: "300px" }}>
                             <Card><Link className="wd-dashboard-course-link text-decoration-none text-dark" to="/Kambaz/Courses/1234/Home">
-                                <Card.Img variant="top" width="100%" src="../../public/images/reactjs.jpg" height={160}></Card.Img>
+                                <Card.Img variant="top" width="100%" src="../assets/reactjs.jpg" height={160}></Card.Img>
                                 <Card.Body>
                                     <Card.Title className="wd-dashboard-course-title">CS1234 React JS</Card.Title>
                                     <Card.Text className="wd-dashboard-course-description">
@@ -23,7 +23,7 @@ export default function Dashboard() {
                         </Col>
                         <Col className="wd-dashboard-course" style={{ width: "300px" }}>
                             <Card><Link className="wd-dashboard-course-link text-decoration-none text-dark" to="/Kambaz/Courses/1234/Home">
-                                <Card.Img variant="top" width="100%" src="../../public/images/reactjs.jpg" height={160}></Card.Img>
+                                <Card.Img variant="top" width="100%" src="../assets/reactjs.jpg" height={160}></Card.Img>
                                 <Card.Body>
                                     <Card.Title className="wd-dashboard-course-title">CS1234 React JS</Card.Title>
                                     <Card.Text className="wd-dashboard-course-description">
@@ -35,7 +35,7 @@ export default function Dashboard() {
                         </Col>
                         <Col className="wd-dashboard-course" style={{ width: "300px" }}>
                             <Card><Link className="wd-dashboard-course-link text-decoration-none text-dark" to="/Kambaz/Courses/1234/Home">
-                                <Card.Img variant="top" width="100%" src="../../public/images/reactjs.jpg" height={160}></Card.Img>
+                                <Card.Img variant="top" width="100%" src="../assets/reactjs.jpg" height={160}></Card.Img>
                                 <Card.Body>
                                     <Card.Title className="wd-dashboard-course-title">CS1234 React JS</Card.Title>
                                     <Card.Text className="wd-dashboard-course-description">
@@ -47,7 +47,7 @@ export default function Dashboard() {
                         </Col>
                         <Col className="wd-dashboard-course" style={{ width: "300px" }}>
                             <Card><Link className="wd-dashboard-course-link text-decoration-none text-dark" to="/Kambaz/Courses/1234/Home">
-                                <Card.Img variant="top" width="100%" src="../../public/images/reactjs.jpg" height={160}></Card.Img>
+                                <Card.Img variant="top" width="100%" src="../assets/reactjs.jpg" height={160}></Card.Img>
                                 <Card.Body>
                                     <Card.Title className="wd-dashboard-course-title">CS1234 React JS</Card.Title>
                                     <Card.Text className="wd-dashboard-course-description">
@@ -59,7 +59,7 @@ export default function Dashboard() {
                         </Col>
                         <Col className="wd-dashboard-course" style={{ width: "300px" }}>
                             <Card><Link className="wd-dashboard-course-link text-decoration-none text-dark" to="/Kambaz/Courses/1234/Home">
-                                <Card.Img variant="top" width="100%" src="../../public/images/reactjs.jpg" height={160}></Card.Img>
+                                <Card.Img variant="top" width="100%" src="../assets/reactjs.jpg" height={160}></Card.Img>
                                 <Card.Body>
                                     <Card.Title className="wd-dashboard-course-title">CS1234 React JS</Card.Title>
                                     <Card.Text className="wd-dashboard-course-description">
@@ -71,7 +71,7 @@ export default function Dashboard() {
                         </Col>
                         <Col className="wd-dashboard-course" style={{ width: "300px" }}>
                             <Card><Link className="wd-dashboard-course-link text-decoration-none text-dark" to="/Kambaz/Courses/1234/Home">
-                                <Card.Img variant="top" width="100%" src="../../public/images/reactjs.jpg" height={160}></Card.Img>
+                                <Card.Img variant="top" width="100%" src="../assets/reactjs.jpg" height={160}></Card.Img>
                                 <Card.Body>
                                     <Card.Title className="wd-dashboard-course-title">CS1234 React JS</Card.Title>
                                     <Card.Text className="wd-dashboard-course-description">
@@ -83,7 +83,7 @@ export default function Dashboard() {
                         </Col>
                         <Col className="wd-dashboard-course" style={{ width: "300px" }}>
                             <Card><Link className="wd-dashboard-course-link text-decoration-none text-dark" to="/Kambaz/Courses/1234/Home">
-                                <Card.Img variant="top" width="100%" src="../../public/images/reactjs.jpg" height={160}></Card.Img>
+                                <Card.Img variant="top" width="100%" src="../assets/reactjs.jpg" height={160}></Card.Img>
                                 <Card.Body>
                                     <Card.Title className="wd-dashboard-course-title">CS1234 React JS</Card.Title>
                                     <Card.Text className="wd-dashboard-course-description">

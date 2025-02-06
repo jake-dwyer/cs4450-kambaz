@@ -8,9 +8,9 @@ import { ListGroup } from "react-bootstrap";
 
 export default function Assignments() {
     return (
-        <div id="assignments">
-            <Options /> <br />
-            <ListGroup className="rounded-0">
+        <div id="assignments" className="d-flex flex-column p-5 pt-2">
+            <Options />
+            <ListGroup className="rounded-0 mt-4">
                 <ListGroup.Item className="wd-module
                     p-0 mb-5 fs-5 border-gray">
                     <div className="wd-title p-3 ps-2 bg-secondary">
@@ -29,7 +29,7 @@ export default function Assignments() {
                                 <div className="text-start me-auto">
                                     <h5 className="mb-1">
                                         <a className="text-dark text-decoration-none" href="#/Kambaz/Courses/1234/Assignments/123">
-                                            <b>A1 - ENV + HTML</b>
+                                            <b>A1</b>
                                         </a>
                                     </h5>
                                     <small className="text-danger">Multiple Modules </small>
@@ -51,7 +51,7 @@ export default function Assignments() {
                                 <div className="text-start me-auto">
                                     <h5 className="mb-1">
                                         <a className="text-dark text-decoration-none" href="#/Kambaz/Courses/1234/Assignments/123">
-                                            <b>A2 - CSS + BOOTSTRAP</b>
+                                            <b>A2</b>
                                         </a>
                                     </h5>
                                     <small className="text-danger">Multiple Modules </small>
@@ -73,7 +73,7 @@ export default function Assignments() {
                                 <div className="text-start me-auto">
                                     <h5 className="mb-1">
                                         <a className="text-dark text-decoration-none" href="#/Kambaz/Courses/1234/Assignments/123">
-                                            <b>A3 - JAVASCRIPT + REACT</b>
+                                            <b>A3</b>
                                         </a>
                                     </h5>
                                     <small className="text-danger">Multiple Modules </small>

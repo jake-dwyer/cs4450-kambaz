@@ -2,8 +2,8 @@ export default function Lab1() {
   return (
     <div>
       <div>
-        <h2>Jake Dwyer CS4450</h2>
-        <a id="wd-github" href="https://github.com/jake-dwyer/cs4450-kambaz" target="_blank">Source Code</a>
+        <h2>Jake Dwyer CS4550</h2>
+        <a id="wd-github" href="https://github.com/jake-dwyer/cs4550-kambaz" target="_blank">Source Code</a>
       </div>
       <h2>Lab 1</h2>
       <h3>HTML Examples</h3>
